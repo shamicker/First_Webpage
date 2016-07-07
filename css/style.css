@@ -1,0 +1,141 @@
+/** {
+	border: 1px solid red;
+}*/   /*helpful for seeing outlines*/
+
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.3;
+	background-color: #4E2D58;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	margin: 5px;
+}
+
+.background {
+	background-color: gray;
+	border: 1px dashed silver;
+	box-shadow: 0 0 0 2px gray, 0 0 0 4px silver, 0 0 0 7px gray;
+	border-radius: 40px;
+	margin: 9px;
+}
+
+nav {
+	width: 20%;
+	padding-top: 70px;
+}
+
+main {
+	width: 60%;
+}
+
+aside {
+	-webkit-order: 3;
+	order: 3;
+	width: 20%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+/*	-webkit-justify-content: center;
+	justify-content: center; */   /*no outcome I can see*/
+	padding: 70px 0 5px 0;
+}
+
+.subconcept {
+	background-color: silver;
+	border-radius: 50px;
+	color: #371157;
+	text-align: justify;
+	padding: 5px 15px;
+	margin: 5px;
+}
+
+img {
+	border-radius: 30px;
+	min-width: 90px;
+	max-width: 100%;
+/*	text-align: center;*/  /*centers vertically*/
+	padding: 5px;
+}
+
+h1, h2, a {
+	color: #570c70;
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+span {
+	color: #A63850;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a[target="_blank"] {
+	color: blue;
+}
+
+nav ol {
+	padding: 0;
+	margin: 5%;
+	text-indent: 10%
+}
+
+ol, ul {
+	list-style: none;
+}
+
+ul li:before {
+	content: "- ";
+	font-weight: bold;
+	margin-left: -10px;
+}
+
+.no-newline {
+	margin-top: -12px;
+}
+
+.nested {
+	text-indent: 0;
+	margin: 5% 0 25% 15%;
+}
+
+.button {
+	display: block;
+/*	border: 1px solid #737373;
+ 	border-radius: 5px; */   /*borders are useful to figure out padding/margins!*/
+	font-size: 16px;
+	padding: 2px;
+	margin-bottom: 5%;
+}
+
+.nested a {
+	padding-left: 10%;
+}
+
+code {
+	color: black;
+	background-color: #9C9C9C;
+	
+}
+.comment {
+	color: #5C5C5C;
+}
+
+
+
+
+
+

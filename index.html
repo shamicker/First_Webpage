@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Shauna's Stage 1.3</title>
+</head>
+
+<body>
+	<nav class="background">
+		<ol>
+			<li><a class="button" href="#concept-1">HTML Basics</a>
+				<ol class="nested">
+					<li><a class="button" href="#subconcept-1.1">Components and Syntax</a></li>
+					<li><a class="button" href="#subconcept-1.2">Structure</a></li>
+				</ol>
+			</li>
+			<li><a class="button" href="#concept-2">CSS Basics</a>
+				<ol class="nested">
+					<li><a class="button" href="#subconcept-2.1">Components and Syntax</a></li>
+					<li><a class="button" href="#subconcept-2.2">Style</a></li>
+					<li><a class="button" href="#subconcept-2.3">Semantics</a></li>
+				</ol>
+			</li>
+			<li><a class="button" href="#concept-3">Python Basics</a>
+				<ol class="nested">
+					<li><a class="button" href="#subconcept-3.1">Components and Syntax</a></li>
+					<li><a class="button" href="#subconcept-3.2">Indexing</a></li>
+					<li><a class="button" href="#subconcept-3.3">Finding</a></li>
+				</ol>
+			</li>
+			<li><a class="button" href="#concept-4">Other Concepts</a>
+				<ol class="nested">
+					<li><a class="button" href="#subconcept-4.1">DOM Tree</a></li>
+					<li><a class="button" href="#subconcept-4.2">For Later Learning</a></li>
+				</ol>
+			<li><a class="button" href="#concept-5">Keep Heart!</a></li>
+		</ol>
+	</nav>
+
+	<aside class="background">
+		<img id="no-compare" src="https://dl.dropboxusercontent.com/u/3621335/no-compare.jpeg" alt="Don't compare yourself to others!">
+		<img id="forward" src="https://dl.dropboxusercontent.com/u/3621335/forward.jpeg" alt="Speed doesn't matter. Forward is forward.">
+		<img id="simple" src="https://dl.dropboxusercontent.com/u/3621335/keep-it-simple.jpg" alt="Keep it simple">
+	</aside>
+		
+	<main class="background">
+		<div class="concept" id="concept-1">
+			<h1>HTML Basics</h1>
+			<div class="subconcept" id="subconcept-1.1">
+				<h2>HTML Components and Syntax</h2>
+				<p>The web's primary language is HTML. Items on the web can be made up of any kind of content: text, markup (what it looks like), references to documents, and links.  Like any language, HTML is made up of smaller components and syntax (grammar laws). There are tags, elements, attributes, and values.</p>
+				<p>A <span>tag</span> is the equivalent of a "word". A tag has <code>&lt;</code> and <code>&gt;</code> around it.</p>
+				<p>An <span>element</span> is usually made up of a beginning tag and an end tag. Sometimes there is no closing tag, called a <span>void tag</span> since there is no actual content.</p>
+				<p>There is also an <span>attribute</span>, which is a specified characteristic of a tag, and a <span>value</span> is the description of the attribute. As in <code>&lt;tag tag's-attribute="value">content&lt;/tag&gt;</code>.</p>
+			</div>
+			<div class="subconcept" id="subconcept-1.2">
+				<h2>HTML Structure</h2>
+				<p>Structured HTML is crucial in order to create an efficient page and increase productivity. It is the outline of your document, and creates some of the hierarchy in which CSS operates. If an HTML document is well-structured, adding CSS should be a breeze.</p>
+				<p>There are 2 types of elements - inline and block elements. An <span>inline element</span> is where an element just continues in line with what comes before and after the element <span>Block elements</span> actually separate themselves a bit, and create a little invisible barrier or block around themselves. Block elements also affect layout and style, whereas inline elements do not.</p>
+			</div>
+		</div>
+
+		<div class="concept" id="concept-2">
+			<h1>CSS Basics</h1>
+			<div class="subconcept" id="subconcept-2.1">
+				<h2>CSS Components and Syntax</h2>
+				<p>CSS stands for Cascading Style Sheets. 'Cascading' because of the cascading hierarchy which falls down from parent to child levels. The least powerful level of cascade is the least specific one, often firstly mentioned. In other words, it's the 'blanket statement' rule that applies to everything that does not have more specific rules.</p>
+				<p><span>Selectors</span> make <span>Declarations</span>! This is everything within the curly brackets { }. A declaration is made up of a <span>Property</span> with a <span>Value</span>. The main selectors are:</p>
+				<p><span>Tag</span> - (<code>selector { }</code>) - a sort of blanket statement saying all of this [whatever is chosen] element is styled this [whatever is specified] way.</p>
+				<p><span>Class</span> - (<code>.selector { }</code>) - is very versatile and is very common.</p>
+				<p><span>Pseudo-class</span> - (<code>:selector { }</code>) - can be positional or relational. For instance, '3n' would be 'every third'; 'hover' would be 'when hovered over'.</p>
+				<p><span>ID</span> - (<code>#selector { }</code>) - is the strongest and over-rules all other selectors. Therefore it is not used too frequently.</p>
+				<p>For more on selectors, check out  <a href="https://developer.mozilla.org/en/docs/Web/Guide/CSS/Getting_started/Selectors" target="_blank">Mozilla CSS Selectors</a> (I don't know why it's in Spanish right now since English is the selected language!) and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla CSS References</a>.</p> 
+			</div> <!--target="_blank" opens the link in a new tab.-->
+			<div class="subconcept" id="subconcept-2.2">
+				<h2>CSS Style</h2>
+				<p>Code is used to communicate with a computer, but style is used to communicate with others (or your future self). 3 major reasons to have good style:</p>
+				<ul class="no-newline">
+					<li>to write more efficiently</li>
+					<li>to understand already-written code more efficiently</li>
+					<li>to communicate in a common style</li>
+				</ul>
+				<p>Commenting in your code can be important to understanding your style. A comment or note-to-self in HTML is denoted by <code class="comment">&lt;!--text--&gt;</code>. In CSS it is <code class="comment">/*text*/</code>. You can leave a short description, as in <code class="comment">/*this section is here*/</code>, or a longer note or reminder, as in <code class="comment">/*to do: make x changes here!*/</code>.</p>
+				<p>As it is said, apparently:</p>
+				<ol class="no-newline">
+					<li>Beginners comment on what they're doing.</li>
+					<li>Experienced comment on how they're doing something.</li>
+					<li>Experts comments on why they're doing something.</li>
+				</ol>
+				<p>If you have good style, it already says what you're doing.</p>
+			</div>
+			<div class="subconcept" id="subconcept-2.3">
+				<h2>Semantics</h2>
+				<p>It always comes down to semantics (meaning of content)! Proper use is needed in programming, where being specific and precise is essential to good coding (unlike current English skills). Semantics is key.</p>
+				<p>For example, to emphasize a key word, one could use <code>&lt;b&gt;</code> or <code>&lt;em&gt;</code> or <code>&lt;strong&gt;</code>. But it all depends on what your goal is. To just bold or italicize is just that. However, if you really want to emphasize the <b>meaning</b>, then you would use <code>&lt;strong&gt;</code>.</p>
+			</div>
+		</div>
+
+		<div class="concept" id="concept-3">
+			<h1>Python Basics</h1>
+			<div class="subconcept" id="subconcept-3.1">
+				<h2>Components and Syntax</h2>
+				<p>Unlike HTML (and CSS), Python is actually an interpreter! The code we write in Python language is the human side of the instructions, as precise as we can get. It's put into the python program and the program translates our version of Python into a language that the computer can understand, and then the computer executes those instructions. If using in <b>Sublime Text</b>, just make sure to <b>save</b> and then hit <b>cmd-B</b> (on a Mac) for it to execute at the bottom of the screen!</p>
+				<p>Much like Microsoft Excel, Python is more of a mathematical language than HTML is. A human assigns names to variables, creates statements and procedures (functions), and then these expressions are executed by the computer.</p>
+				<p>A <span>variable</span> is a name given to a number or string that is more memorable to the viewer (human). For instance, instead of having an expression of <code>299792458</code>, which is a seemingly random number, one would give it a name of <code>speed_of_light</code>.</p>
+				<p>Sometimes, numbers without a variable <span>magic numbers</span>. It's best to reduce the amount of "magic numbers" in our code. In this way, one not only minimizes the margin of error, but also creates code that is equally readable by the computer and humans.</p>
+				<p>A <span>statement</span> is simply the "official" assigning, if you will, of a name/variable. Python won't read minds and requires explicit statements. For the above example, an assignment statement would look like: <code>speed_of_light = 299792458</code>.</p>
+				<p>A <span>procedure</span> is also known as a <b>function</b> (again, think Excel). A <span>method</span> is a built-in procedure in Python. For example, <code>.find</code> is a method: Python already knows what to do with it.</p>
+				<p>An <span>expression</span> is something that has a value (not necessarily numerical); is in some way expressed. It can be numerical, alphabetical, a string, or something that will be defined later.</p>
+				<p>A <span>string</span> is a value that has quotation marks around it, representing a non-numerical value (although it can contain numbers). It can be a single character or a string of them.</p>
+				<p>In Python, <span>the <code>=</code> sign</span> does not signify equality, but rather is treated more like an arrow; it's an assignment. So <code>2 + 3 = 5</code> is very different from <code>my_variable = 5</code>.</p>
+				<p><span>Decimals</span> must be forced, in Python. By default, Python will not give decimals, yet it won't round either! It just provides the whole number. If you want decimals, there must be a decimal point somewhere in your variables or numbers.</p>
+			</div>
+			<div class="subconcept" id="subconcept-3.2">
+				<h2>Indexing</h2>
+				<p>To <span>index</span> a string is to find the first position within the string, of whatever you're looking for. The result will be a numerical value. The very first position of a string is always <code>0</code>, so the second character's position is always <code>1</code>.  To start at counting (backwards) from the end, one uses negative numbers, starting with <code>-1</code> being the very last character position.</p>
+				<p>For example: <code>"udacity"[0]</code> is where, for the string "udacity", we are indexing (denoted by <code>[</code> and <code>]</code>) the first character (by using <code>0</code> since all indexing sequences start with 0).  The result is <code>u</code>. A couple others:</p>
+				<ol class="no-newline">
+					<li><code>"udacity"[3] = c</code></li>
+					<li><code>"udacity"[-1] = y</code></li>
+				</ol>
+				<p>Although I easily could, since all this is new to me, I will not go into further detail! I will, however, redirect you to a <a href="Python Basics.pdf" target="_blank">Python Reference sheet</a> and some more complicated <a href="https://www.udacity.com/wiki/cs101/unit2-python-reference" target="_blank">procedures</a></p>
+				<p>**<b>Note</b> that there is a difference between <code>&lt;string&gt;[0]</code> and <code>&lt;string&gt;[0:]</code>. <b>If</b> there are any characters in the <code>&lt;string&gt;</code>, then there is no problem: the first results in the first character of the string, while the second expression results in the whole string. However, if the string is <b>empty</b>, the first expression will error out because there <em>are</em> no characters and therefore cannot give the first character. On the other hand, the second expression won't cause an error because the result will just display the empty string.**</p>
+			</div>
+			<div class="subconcept" id="subconcept-3.3">
+				<h2>Finding</h2>
+				<p>As previously mentioned, <span>find</span> is a pre-defined method; Python can find a character or a string within another string, and it's basically the same as the Excel function. Like indexing, <span>find</span> will numerically return the first position of what you're looking for, but anything not found will execute as <code>-1</code>.</p>
+				<p>Syntax for find is <code>&lt;string&gt;.find(&lt;string&gt;)</code>.</p>
+			</div>
+		</div>
+
+		<div class="concept" id="concept-4">
+			<h1>Other Concepts</h1>
+			<div class="subconcept" id="subconcept-4.1">
+				<h2>DOM Tree</h2>
+				<p>DOM stands for Document Object Model and is an all-language concept. It is the breaking down of a page into smaller and smaller parts, eventually ending up with a page's most basic components <em>(much like finding the prime factors of a number)</em>.</p>
+			</div>
+			<div class="subconcept" id="subconcept-4.2">
+				<h2>For Later Learning</h2>
+				<p>Some concepts I've stumbled upon to keep in mind:</p>
+				<ul class="no-newline">
+					<li><span>Overflow</span> (CSS) maintains text within a contained area using a scroll bar to view the "overflowing" text.</li>
+					<li><span>Frameworks</span> are sets of (CSS) <b>classes</b> that control layout and are standard-compliant. Many are pre-prepared, such as 'Bootstrap' or 'Foundation'. Most contain a grid and maybe some basic (design-oriented) JavaScript.</li> 
+				</ul>
+			</div>
+		</div>
+
+		<div class="concept" id="concept-5">
+			<h1>Keep Heart!</h1>
+			<div class="subconcept" id="subconcept-5.1">
+				<h2>Remember!</h2>
+				<p>As a <b>novice</b>, you are ignorant that something exists.<br>
+				As a <b>beginner</b>, you are aware that it exists but do not know much else.<br>
+				As an <b>intermediate</b>, you have some ability but still have some difficulty.<br>
+				As an <b>expert</b>, you have fluency!</p>
+				<p>From novice to beginner takes <b>minutes</b> to become informed.<br>
+				From beginner to intermediate takes only <b>days</b> to know some basics.<br>
+				From intermediate to expert takes <b>years</b>.</p>
+				<p>Try to remember this. Do not become discouraged!! You have to <b>work</b> your way <b>up</b> to <b>fluency</b>!</p>
+			</div>
+		</div>
+	</main> 
+
+</body>
+</html>
